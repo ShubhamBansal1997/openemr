@@ -702,7 +702,7 @@ if ($it_died != 0) {
     private function set_sql_strict()
     {
         // Turn off STRICT SQL
-        return $this->execute_sql("SET sql_mode = ''");
+        return $this->execute_sql("SET sql_mode = 'ALLOW_INVALID_DATES'");
     }
 
     private function set_collation()
